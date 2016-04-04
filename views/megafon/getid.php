@@ -14,9 +14,12 @@ use yii\widgets\ActiveForm;
 
         <?= $form->field($model, 'user_id')->textInput(['autofocus' => true])->hint('Пожалуйста введите ваш номер')->label('ID') ?>
 
+        <?= $form->field($model, 'amount')->textInput(['autofocus' => false])->hint('сумма пополнения')->label('Сумма') ?>
+
         <div class="form-group">
-            <?= Html::submitButton('Далее', ['class' => 'btn btn-primary']) ?>
+            <?= Html::submitButton('Далее', ['class' => 'btn btn-primary', 'id' => 'submit']) ?>
         </div>
     <?php ActiveForm::end(); ?>
+    <div id="block"></div>
 
 </div><!-- getpay -->

@@ -15,11 +15,12 @@ class User_transaction extends ActiveRecord {
 
     public $user_id;
     public $amount;
+    public $SALT = r2h8fr83wfy3874fg8yfw46;
 
     public function rules()
     {
         return [
-            [['user_id'], 'required']
+            [['user_id', 'amount'], 'required']
         ];
     }
 

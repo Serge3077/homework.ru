@@ -21,15 +21,9 @@ class MegafonController extends Controller
     {
         $model = new User_transaction();
 
-        if ($model->load(Yii::$app->request->post())&&($model->validate())) {
-            $_GET['a'] = $model->user_id;
-            return $this->render('confirm', ['model' => $model]);
+        return $this->render('getid', ['model' => $model]);
 
-        }
-        else {
-            // либо страница отображается первый раз, либо есть ошибка в данных
-            return $this->render('getid', ['model' => $model]);
-        }
+
     }
 
     public function actionSend()
