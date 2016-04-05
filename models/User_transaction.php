@@ -16,6 +16,8 @@ class User_transaction extends ActiveRecord {
     public $user_id;
     public $amount;
     public $SALT = r2h8fr83wfy3874fg8yfw46;
+    public $success = '<answer>1</answer>';
+    public $success1 = 'OK';
 
     public function rules()
     {

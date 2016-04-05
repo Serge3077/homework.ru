@@ -11,7 +11,7 @@ $this->title = 'My Yii Application';
 
         <p class="lead">Выберите провайдера.</p>
 
-        <p><a class="btn btn-lg btn-success" href="index.php?r=megafon%2Fgetpay">MegaFon</a><a class="btn btn-lg btn-danger" href="#">MTS</a> </p>
+        <p><a class="btn btn-lg btn-success" href="index.php?r=megafon%2Fgetpay">MegaFon</a><a class="btn btn-lg btn-danger" href="index.php?r=mts%2Fgetpay">MTS</a> </p>
     </div>
 
     <div class="body-content">
